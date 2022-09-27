@@ -1,4 +1,90 @@
 // alert("Welcome to the dice Game")
+//  *********** button function *****************
+
+
+
+
+// var btnclick = document.getElementById("#click-me");
+document.querySelector('#click-me').addEventListener('click', function() {
+
+var randomNumber1 = Math.floor(Math.random() * 6)
+var randomImage = "./images/" + "dice" + randomNumber1 + ".png";
+
+// document.querySelector("img1").setAttribute("src" , randomImage)
+document.getElementById("image1").src = randomImage;
+
+var randomNumber2 = Math.floor(Math.random() * 6 )
+var randomImage2 = "./images/" + "dice" + randomNumber2 + ".png";
+
+document.getElementById("image2").src = randomImage2; 
+
+
+// who wins 
+
+if (randomNumber1 > randomNumber2) {
+  document.querySelector("h1").innerHTML = "Player 1 wins";
+
+} else if (randomNumber1 < randomNumber2) {
+  document.querySelector("h1").innerHTML = "Player 2 wins";
+
+} else {
+  document.querySelector("h1").innerHTML = "Draw";
+}
+
+
+
+
+
+
+
+// score tabel
+
+// **********************
+// ******* first player ********
+
+
+
+if (randomNumber1 > randomNumber2) {
+  document.querySelector(".fr-1").innerHTML = "1";
+  
+} else if (randomNumber1 < randomNumber2) {
+  document.querySelector(".fr-1").innerHTML = "0";
+
+} else {
+  document.querySelector(".fr-1").innerHTML = "0";
+}
+
+
+
+// ******* second player ********
+
+
+
+if (randomNumber1 > randomNumber2) {
+  document.querySelector(".fr-2").innerHTML = "0";
+  
+} else if (randomNumber1 < randomNumber2) {
+  document.querySelector(".fr-2").innerHTML = "1";
+
+} else {
+  document.querySelector(".fr-2").innerHTML = "0";
+}
+})
+
+
+
+
+
+// function diceFunction ()  {
+//   alert("hey");
+// }
+
+// score tabel ****************
+
+
+
+
+
 
 
 // function dice1 () {
@@ -103,31 +189,9 @@
 // second way to do it!!
 // **************************************************************************
 
-var randomNumber1 = Math.floor(Math.random() * 6)
-var randomImage = "./images/" + "dice" + randomNumber1 + ".png";
-
-// document.querySelector("img1").setAttribute("src" , randomImage)
-document.getElementById("image1").src = randomImage;
-
-var randomNumber2 = Math.floor(Math.random() * 6 )
-var randomImage2 = "./images/" + "dice" + randomNumber2 + ".png";
-
-document.getElementById("image2").src = randomImage2; 
 
 
-// who wins 
-
-if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "Player 1 wins";
-} else if (randomNumber1 < randomNumber2) {
-  document.querySelector("h1").innerHTML = "Player 2 wins";
-
-} else {
-  document.querySelector("h1").innerHTML = "Draw";
-}
-
-
-// score tabel code
-if (randomNumber1 > randomNumber2) {
-  document.querySelector("").innerHTML = "1"
-}
+// // score tabel code
+// if (randomNumber1 > randomNumber2) {
+//   document.querySelector("").innerHTML = "1"
+// }
