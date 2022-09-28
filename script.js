@@ -1,4 +1,12 @@
 // alert("Welcome to the dice Game")
+
+// asking user's to enter their name 
+
+var userName1 = prompt("enter the name of player 1");
+var userName2 = prompt("enter the name of player 2");
+
+document.querySelector(".dice p").innerHTML = userName1;
+document.querySelectorAll(".dice p")[1].innerHTML = userName2;
 //  *********** button function *****************
 
 
@@ -70,6 +78,11 @@ if (randomNumber1 > randomNumber2) {
   document.querySelector(".fr-2").innerHTML = "0";
 }
 })
+
+
+// adding sounds section
+
+
 
 
 
