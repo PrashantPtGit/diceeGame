@@ -54,7 +54,7 @@ if (randomNumber1 > randomNumber2) {
 
 if (randomNumber1 > randomNumber2) {
   document.querySelector(".fr-1").innerHTML = "1";
-  
+
 } else if (randomNumber1 < randomNumber2) {
   document.querySelector(".fr-1").innerHTML = "0";
 
@@ -66,13 +66,17 @@ if (randomNumber1 > randomNumber2) {
 
 // ******* second player ********
 
+// this updates the names of player entered by user on the score tabel
+document.querySelectorAll("th")[0].innerHTML = userName1;
+document.querySelectorAll("th")[1].innerHTML = userName2;
 
+// score tabel score's 
 
 if (randomNumber1 > randomNumber2) {
   document.querySelector(".fr-2").innerHTML = "0";
   
 } else if (randomNumber1 < randomNumber2) {
-  document.querySelector(".fr-2").innerHTML = "1";
+  document.querySelector(".fr-2").innerHTML = "<h1> hey </h1>";
 
 } else {
   document.querySelector(".fr-2").innerHTML = "0";
@@ -81,6 +85,10 @@ if (randomNumber1 > randomNumber2) {
 
 
 // adding sounds section
+
+document.getElementById("click" , function () {
+
+})
 
 
 

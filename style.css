@@ -52,7 +52,9 @@ footer {
   float: left;
   color: gainsboro;
   border: 2px solid grey;
-  padding: 10px;
+  /* padding: 10px; */
+  position: relative;
+  top: -50px;
 
 }
 
@@ -62,4 +64,12 @@ footer {
   justify-content: center;
   position: relative;
   top: 10px;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
 }
