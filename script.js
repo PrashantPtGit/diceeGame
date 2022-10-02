@@ -10,8 +10,6 @@ document.querySelectorAll(".dice p")[1].innerHTML = userName2;
 //  *********** button function *****************
 
 
-
-
 // var btnclick = document.getElementById("#click-me");
 document.querySelector('#click-me').addEventListener('click', function() {
 
@@ -76,7 +74,7 @@ if (randomNumber1 > randomNumber2) {
   document.querySelector(".fr-2").innerHTML = "0";
   
 } else if (randomNumber1 < randomNumber2) {
-  document.querySelector(".fr-2").innerHTML = "<h1> hey </h1>";
+  document.querySelector(".fr-2").innerHTML = "1";
 
 } else {
   document.querySelector(".fr-2").innerHTML = "0";
